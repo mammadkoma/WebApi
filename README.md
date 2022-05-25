@@ -1,2 +1,2 @@
-# WebApi
-asp.net core 6 web api for spa apps
+# asp.net core 6 web api for spa apps
+
