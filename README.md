@@ -1,21 +1,6 @@
 # asp.net core 6 web api for spa apps , focusing on writing less code
 - Global Using Statements
 ![image](https://user-images.githubusercontent.com/17564001/170569285-18e5694b-a610-4346-ae36-61920e49c7c4.png)
-global using Microsoft.AspNetCore.Diagnostics;
-global using Microsoft.AspNetCore.Mvc;
-global using Microsoft.EntityFrameworkCore;
-global using NetCore.AutoRegisterDi;
-global using System.ComponentModel.DataAnnotations;
-global using System.Globalization;
-global using System.Net;
-global using System.Security.Cryptography;
-global using System.Text;
-global using WebApi.Configs;
-global using WebApi.Data;
-global using WebApi.Data.Entities;
-global using WebApi.Services.UserService;
-global using WebApi.Utilities;
-
 
 - File Scoped Namespaces
 ![image](https://user-images.githubusercontent.com/17564001/170569428-b64441bb-9952-4592-8bd9-3b51919f95e0.png)
