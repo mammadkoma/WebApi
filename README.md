@@ -7,6 +7,6 @@
 
 - ef core 6 db first
  * for scaffolding: 
- 1. Install ef core power (It needs open and close Visual Studio)
+ 1. Install ef core power tools visual studio extension (It needs open and close Visual Studio)
  ![image](https://user-images.githubusercontent.com/17564001/170569946-da43bfa3-1d1e-4bbe-8144-f8e1df6c38f3.png)
  2. Right click on web project (not solution) , then select EF Core Power Tools > Reverse Engineer
