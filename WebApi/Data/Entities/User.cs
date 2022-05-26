@@ -9,13 +9,13 @@ namespace WebApi.Data.Entities
     {
         public User()
         {
+            Products = new HashSet<Product>();
             UserRoles = new HashSet<UserRole>();
             UserTokens = new HashSet<UserToken>();
         }
 
         public int Id { get; set; }
         public string UserName { get; set; }
-        public string NormalizedUserName { get; set; }
         public string PasswordHash { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -23,15 +23,10 @@ namespace WebApi.Data.Entities
         public bool MobileConfirmed { get; set; }
         public string Email { get; set; }
         public bool EmailConfirmed { get; set; }
-        public string SecurityStamp { get; set; }
-        public string ConcurrencyStamp { get; set; }
-        public bool TwoFactorEnabled { get; set; }
-        public DateTimeOffset? LockoutEnd { get; set; }
-        public bool LockoutEnabled { get; set; }
-        public int AccessFailedCount { get; set; }
         public DateTime CreateDate { get; set; }
         public DateTime? UpdateDate { get; set; }
 
+        public virtual ICollection<Product> Products { get; set; }
         public virtual ICollection<UserRole> UserRoles { get; set; }
         public virtual ICollection<UserToken> UserTokens { get; set; }
     }

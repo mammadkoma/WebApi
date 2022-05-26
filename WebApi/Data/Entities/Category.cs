@@ -5,18 +5,18 @@ using System.Collections.Generic;
 
 namespace WebApi.Data.Entities
 {
-    public partial class Role
+    public partial class Category
     {
-        public Role()
+        public Category()
         {
-            UserRoles = new HashSet<UserRole>();
+            Products = new HashSet<Product>();
         }
 
         public int Id { get; set; }
-        public string Name { get; set; }
-        public DateTime CreateDate { get; set; }
+        public string Title { get; set; }
+        public DateTime AddDate { get; set; }
         public DateTime? UpdateDate { get; set; }
 
-        public virtual ICollection<UserRole> UserRoles { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
     }
 }

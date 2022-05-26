@@ -1,7 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using WebApi.Data;
-
-namespace WebApi.Configs;
+﻿namespace WebApi.Configs;
 
 internal static class ServiceCollectionExtensions
 {
