@@ -1,9 +1,12 @@
 # asp.net core 6 web api for spa apps , focusing on writing less code
-- Global Using Statements
+- Global Using Statements , then you shouldn't write using using ... on top of all classes.
 ![image](https://user-images.githubusercontent.com/17564001/170569285-18e5694b-a610-4346-ae36-61920e49c7c4.png)
 
-- File Scoped Namespaces
-![image](https://user-images.githubusercontent.com/17564001/170569428-b64441bb-9952-4592-8bd9-3b51919f95e0.png)
+- File Scoped Namespaces , then we remove namespace block and get more space.
+![image](https://user-images.githubusercontent.com/17564001/170639922-4c4f0a43-3d06-4118-a151-b3e8e3d87224.png)
+ * Enable it in visual studio options for your new classes:
+   ![image](https://user-images.githubusercontent.com/17564001/170640230-90d33c4a-a0bb-4c1a-bfad-616b28143b34.png)
+<hr>
 
 - ef core 6 data base first
  * for scaffolding: 
