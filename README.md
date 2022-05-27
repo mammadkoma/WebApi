@@ -103,6 +103,17 @@ They are catched in Configs > BadRequestConfig.cs and handle
 
 ![image](https://user-images.githubusercontent.com/17564001/170649729-cbc71464-bec4-4566-81a3-e90a5fa04664.png)
 
-You shouldn't repeate code for status 500 server error. They are catched in Configs > ExceptionConfig.cs and handle
+You shouldn't repeate code for status 500 server errors. They are catched in Configs > ExceptionConfig.cs and handle.
+
+You should throw Business Exceptions , for example : 
+
+if(user.CanInsert()) 
+   throw new Exception("You can not be our user.");
 
 ![image](https://user-images.githubusercontent.com/17564001/170650025-60de933b-34b6-462a-8536-fcdde2d544db.png)
+
+You shouldn't repeate code for error 401 Unauthorized , 403 Forbidden. They are catched in Configs > UnauthorizedConfig.cs and handle.
+
+![Uploading image.png…]()
+
+<hr>
