@@ -117,3 +117,8 @@ You shouldn't repeate code for error 401 Unauthorized , 403 Forbidden. They are 
 ![image](https://user-images.githubusercontent.com/17564001/170652409-114ae4a4-b696-4c0c-b2f1-24b9951ff54b.png)
 
 <hr>
+
+- Secure user passwords : We must prevent to give away the user passwords , so we must change them that other persons can't read them in the data base.
+We can generate one way hash for user1 password. If then user1 password give away , a person who access the data base can set user1's hash for user2 and login to the system with user2 username and gived away password. Then there is a solution for this problem and it is the salt password. The salt password is a random string that it use to generate the hash and causes that generated hashes are not similar to. For example the generated hash for pasword aA@12345 is change every time it generate so the hacker can not set it to user2. Then we must save the salt password in the data base for every user to generate the hash again for comparing in login service. So we should create 2 columns for password in user data base User table : HashPassword and SaltPasword But because we want to write less code we choose another solution. We can encrypt the password by .net 6 and SHA512. Then it is enought to create two extension method for Encrypting and Decrypting a string. The Encrypt() extension method generate a new hash for a particular password every time and it solved before security problem.
+
+![image](https://user-images.githubusercontent.com/17564001/170694514-cbbbb4fb-4582-4a82-8ede-24f83250d4cb.png)
