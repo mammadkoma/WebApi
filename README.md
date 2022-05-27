@@ -41,6 +41,7 @@ for scaffolding:
 
 There is regex validations for username , password , Iranian mobile and email in this project.
 
+<hr>
 
 Regular Expression for Username:
 
@@ -50,7 +51,7 @@ chars , numbers , . , _ accepted
 
 minimun 3 chars
 
-
+<hr>
 
 Regex for Password:
 
@@ -70,7 +71,7 @@ Regex for Password:
 
 $ : end line
 
-
+<hr>
 
 Regex for Iranian mobiles:
 
