@@ -3,6 +3,7 @@ Global Using Statements , then you shouldn't write using using ... on top of all
 ![image](https://user-images.githubusercontent.com/17564001/170569285-18e5694b-a610-4346-ae36-61920e49c7c4.png)
 <hr>
 File Scoped Namespaces , then we remove namespace block and get more space.
+
 ![image](https://user-images.githubusercontent.com/17564001/170639922-4c4f0a43-3d06-4118-a151-b3e8e3d87224.png)
 
 Enable it in visual studio options for your new classes:
