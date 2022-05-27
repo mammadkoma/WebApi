@@ -20,4 +20,3 @@ for scaffolding:
 5. Set DbContext file name , Entities path , DbContext path , select pluralize to plural DbSet<> name. 
 (dbcontext file recreate every time so do not write any code in it)
 ![image](https://user-images.githubusercontent.com/17564001/170641507-342c2168-bf51-4934-87cf-e7d7da32fd25.png)
-<hr>
