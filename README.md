@@ -88,6 +88,21 @@ Regex for Email:
 [RegularExpression(@"^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-‌​]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$", ErrorMessage = Constants.RegularExpressionMsg)]
 
 <hr>
+
 ErrorMessages are in Constants class , so you change error messages only one place:
 
 ![image](https://user-images.githubusercontent.com/17564001/170648785-710b73c9-0f27-4e59-b6cb-e297e09f6f1c.png)
+
+<hr>
+
+- Global exceptions handling:
+
+You shouldn't repeate code for error 404 bad request : if(!ModelState.IsValid)
+
+They are catched in Configs > BadRequestConfig.cs and handle
+
+![image](https://user-images.githubusercontent.com/17564001/170649729-cbc71464-bec4-4566-81a3-e90a5fa04664.png)
+
+You shouldn't repeate code for status 500 server error. They are catched in Configs > ExceptionConfig.cs and handle
+
+![image](https://user-images.githubusercontent.com/17564001/170650025-60de933b-34b6-462a-8536-fcdde2d544db.png)
