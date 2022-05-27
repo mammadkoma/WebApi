@@ -41,22 +41,39 @@ for scaffolding:
 
 There is regex validations for username , password , Iranian mobile and email in this project.
 
+
 Regular Expression for Username:
+
 [A-Za-z0-9][A-Za-z0-9._]{2,50}
+
 chars , numbers , . , _ accepted
+
 minimun 3 chars
 
+
 Regex for Password:
+
 ^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$^+=!*()@%&]).{8,}$
+
 ^: first line
+
 (?=.*[a-z]) : Should have at least one lower case
+
 (?=.*[A-Z]) : Should have at least one upper case
+
 (?=.*\d) : Should have at least one number
+
 (?=.*[#$^+=!*()@%&] ) : Should have at least one special character
+
 .{8,} : Minimum 8 characters
+
 $ : end line
 
+
 Regex for Iranian mobiles:
+
 09(1[0-9]|3[1-9]|2[1-9])-?[0-9]{3}-?[0-9]{4}
+
 start with 09 and then 1 for hamrahe avval , 3 for irancell , 2 for rightel
+
 lenght is only 11 numbers
