@@ -114,6 +114,6 @@ if(user.CanInsert())
 
 You shouldn't repeate code for error 401 Unauthorized , 403 Forbidden. They are catched in Configs > UnauthorizedConfig.cs and handle.
 
-![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/17564001/170652409-114ae4a4-b696-4c0c-b2f1-24b9951ff54b.png)
 
 <hr>
