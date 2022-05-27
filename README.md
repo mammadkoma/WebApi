@@ -39,7 +39,7 @@ for scaffolding:
 
 ![image](https://user-images.githubusercontent.com/17564001/170645236-f01caaec-ed07-499d-a34a-756bc905fb1e.png)
 
-There is regex validations for username , password , Iranian mobile and email in this project.
+There are regex validations for username , password , Iranian mobile and email in this project.
 
 <hr>
 
@@ -80,3 +80,14 @@ Regex for Iranian mobiles:
 start with 09 and then 1 for hamrahe avval , 3 for irancell , 2 for rightel
 
 lenght is only 11 numbers
+
+<hr>
+
+Regex for Email:
+
+[RegularExpression(@"^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-‌​]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$", ErrorMessage = Constants.RegularExpressionMsg)]
+
+<hr>
+ErrorMessages are in Constants class , so you change error messages only one place:
+
+![image](https://user-images.githubusercontent.com/17564001/170648785-710b73c9-0f27-4e59-b6cb-e297e09f6f1c.png)
