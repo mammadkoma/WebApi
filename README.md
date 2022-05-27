@@ -1,5 +1,5 @@
 # asp.net core 6 web api for spa apps , focusing on writing less code
-**Global Using Statements** , then you shouldn't write using using ... on top of all classes.
+- Global Using Statements , then you shouldn't write using using ... on top of all classes.
 ![image](https://user-images.githubusercontent.com/17564001/170569285-18e5694b-a610-4346-ae36-61920e49c7c4.png)
 <hr>
 - File Scoped Namespaces , then we remove namespace block and get more space.
