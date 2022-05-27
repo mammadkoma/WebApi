@@ -51,6 +51,7 @@ chars , numbers , . , _ accepted
 minimun 3 chars
 
 
+
 Regex for Password:
 
 ^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$^+=!*()@%&]).{8,}$
@@ -68,6 +69,7 @@ Regex for Password:
 .{8,} : Minimum 8 characters
 
 $ : end line
+
 
 
 Regex for Iranian mobiles:
