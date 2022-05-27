@@ -35,3 +35,28 @@ for scaffolding:
 ![image](https://user-images.githubusercontent.com/17564001/170641507-342c2168-bf51-4934-87cf-e7d7da32fd25.png)
 
 <hr>
+- Validation : create a ViewModel class file and add validation attribute on top of properties.
+
+![image](https://user-images.githubusercontent.com/17564001/170645236-f01caaec-ed07-499d-a34a-756bc905fb1e.png)
+
+There is regex validations for username , password , Iranian mobile and email in this project.
+
+Regular Expression for Username:
+[A-Za-z0-9][A-Za-z0-9._]{2,50}
+chars , numbers , . , _ accepted
+minimun 3 chars
+
+Regex for Password:
+^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$^+=!*()@%&]).{8,}$
+^: first line
+(?=.*[a-z]) : Should have at least one lower case
+(?=.*[A-Z]) : Should have at least one upper case
+(?=.*\d) : Should have at least one number
+(?=.*[#$^+=!*()@%&] ) : Should have at least one special character
+.{8,} : Minimum 8 characters
+$ : end line
+
+Regex for Iranian mobiles:
+09(1[0-9]|3[1-9]|2[1-9])-?[0-9]{3}-?[0-9]{4}
+start with 09 and then 1 for hamrahe avval , 3 for irancell , 2 for rightel
+lenght is only 11 numbers
