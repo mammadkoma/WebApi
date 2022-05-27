@@ -28,7 +28,7 @@ for scaffolding:
 
 ![image](https://user-images.githubusercontent.com/17564001/170640887-19b6771d-38b2-46e7-a767-2f6310651629.png)
 
-5. Set DbContext file name , Entities path , DbContext path , select pluralize to plural DbSet<> name. 
+5. Set DbContext file name , Entities path , DbContext path , select pluralize to plural DbSet<> name. (These settings saved in efpt.config.json on root path of project and do every time)
 
 (dbcontext file recreate every time so do not write any code in it)
 
