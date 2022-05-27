@@ -5,9 +5,10 @@
 - File Scoped Namespaces
 ![image](https://user-images.githubusercontent.com/17564001/170569428-b64441bb-9952-4592-8bd9-3b51919f95e0.png)
 
-- ef core 6 db first
+- ef core 6 data base first
  * for scaffolding: 
  1. Install "ef core power tools" visual studio extension (It needs open and close Visual Studio after downloading)
  ![image](https://user-images.githubusercontent.com/17564001/170569946-da43bfa3-1d1e-4bbe-8144-f8e1df6c38f3.png)
  2. Right click on web project (not solution) , then select EF Core Power Tools > Reverse Engineer
  ![image](https://user-images.githubusercontent.com/17564001/170573556-462f5026-a076-4c47-88e4-79aca32d6b58.png)
+3. Add or select a connection string
