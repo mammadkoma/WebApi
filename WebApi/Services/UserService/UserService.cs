@@ -2,22 +2,27 @@
 
 public class UserService : IUserService
 {
-    private readonly AppDbContext _appDbContext;
+    private readonly AppDbContext _db;
 
     public UserService(AppDbContext appDbContext)
     {
-        _appDbContext = appDbContext;
+        _db = appDbContext;
     }
 
 
     public async Task Add(User user)
     {
-        await _appDbContext.Users.AddAsync(user);
-        await _appDbContext.UserRoles.AddAsync(new UserRole
+        await _db.Users.AddAsync(user);
+        await _db.UserRoles.AddAsync(new UserRole
         {
             User = user,
             RoleId = 2, // 1:Admin 2:Customer
         });
-        await _appDbContext.SaveChangesAsync();
+        await _db.SaveChangesAsync();
+    }
+
+    public async Task<User> GetByUserName(string userName)
+    {
+        return await _db.Users.FirstOrDefaultAsync(u => u.UserName == userName);
     }
 }

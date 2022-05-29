@@ -1,4 +1,5 @@
 ﻿global using Microsoft.AspNetCore.Diagnostics;
+global using Microsoft.AspNetCore.Identity;
 global using Microsoft.AspNetCore.Mvc;
 global using Microsoft.EntityFrameworkCore;
 global using NetCore.AutoRegisterDi;
@@ -7,8 +8,8 @@ global using System.Globalization;
 global using System.Net;
 global using System.Security.Cryptography;
 global using System.Text;
+global using Utilities;
 global using WebApi.Configs;
 global using WebApi.Data;
 global using WebApi.Data.Entities;
 global using WebApi.Services.UserService;
-global using WebApi.Utilities;

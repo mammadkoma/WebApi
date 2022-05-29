@@ -25,7 +25,7 @@ public static class ExceptionConfig
 
     private static string CheckException(Exception ex)
     {
-        if (ex.InnerException.Message.Contains("UNIQUE KEY constraint 'IX_User'"))
+        if (ex.InnerException != null && ex.InnerException.Message.Contains("UNIQUE KEY constraint 'IX_User'"))
             return "این یوزرنیم قبلا ثبت شده است.";
 
         if (ex.InnerException is not null)
