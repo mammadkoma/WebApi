@@ -97,7 +97,7 @@ ErrorMessages are in Constants class , so you change error messages only one pla
 
 - Global exceptions handling:
 
-You shouldn't repeate code for error 404 bad request : if(!ModelState.IsValid)
+You shouldn't repeate code for error 400 bad request : if(!ModelState.IsValid)
 
 They are catched in Configs > BadRequestConfig.cs and handle
 
