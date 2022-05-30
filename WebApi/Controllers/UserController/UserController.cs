@@ -12,12 +12,12 @@ public class UserController : ControllerBase
 
 
     [HttpPost]
-    public async Task<IActionResult> Register(RegisterVM model)
+    public async Task<IActionResult> Register(VmRegister model)
     {
         var user = new User
         {
             UserName = model.UserName,
-            PasswordHash = PasswordHash.HashPassword(model.Password),
+            PasswordHash = PasswordHasher.HashPasswordV3(model.Password),
             FirstName = model.FirstName,
             LastName = model.LastName,
             Mobile = model.Mobile,
@@ -29,11 +29,11 @@ public class UserController : ControllerBase
 
 
     [HttpPost]
-    public async Task<IActionResult> Login(LoginVM model)
+    public async Task<IActionResult> Login(VmLogin model)
     {
         var user = await _userService.GetByUserName(model.UserName);
 
-        if (user is null || !PasswordHash.VerifyPassword(model.Password, user.PasswordHash))
+        if (user is null || !PasswordHasher.VerifyHashedPasswordV3(user.PasswordHash, model.Password))
             throw new Exception("یوزرنیم یا پسورد اشتباه است.");
 
         return Ok();

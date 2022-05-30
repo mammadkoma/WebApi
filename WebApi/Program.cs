@@ -2,7 +2,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddDataBase(builder.Configuration.GetConnectionString("CS"));
-//builder.Services.AddIdentityAndOptions();
 builder.Services.RegisterAssemblyPublicNonGenericClasses()
   .Where(c => c.Name.EndsWith("Service"))
   .AsPublicImplementedInterfaces(ServiceLifetime.Scoped); // default is Transient

@@ -1,6 +1,6 @@
 ﻿namespace WebApi.Controllers.UserController;
 
-public class LoginVM
+public class VmLogin
 {
     [Display(Name = "یوزر نیم")]
     [Required(ErrorMessage = Constants.RequireMsg)]

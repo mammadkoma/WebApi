@@ -1,6 +1,6 @@
 ﻿namespace WebApi.Controllers.UserController;
 
-public class RegisterVM
+public class VmRegister
 {
     [Display(Name = "یوزر نیم")]
     [Required(ErrorMessage = Constants.RequireMsg)]

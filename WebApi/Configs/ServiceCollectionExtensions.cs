@@ -11,7 +11,7 @@ internal static class ServiceCollectionExtensions
         return services;
     }
 
-    internal static IServiceCollection AddIdentityAndOptions(this IServiceCollection services)
+    internal static IServiceCollection AddIdentity(this IServiceCollection services)
     {
         services.AddIdentity<User, Role>();
         //services.Configure<IdentityOptions>(options =>
