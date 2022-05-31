@@ -11,6 +11,16 @@ Enable it in visual studio options for your new classes:
 <hr>
 - EF core 6 data base first
 
+Open ssms and connect to your sql server instance , right click on Databases , select Attach... , click on Add... button , go to the WebApi project and Data folder , select WebApi.mdf and select OK. Now you have the WebApi data base on your sql server instance.
+
+![image](https://user-images.githubusercontent.com/17564001/171223461-b29a2c3e-76fd-49b9-9b1d-5826aead1f76.png)
+
+The sql server connection string of project (CS) is in appsettings.json file in root of the project path.
+
+The current Data Source is .\\sqlexpress , you must change it if your Data Source is different.
+
+![image](https://user-images.githubusercontent.com/17564001/171224102-4db40b6a-ce07-40ab-ab95-b1f1e41c205c.png)
+
 for scaffolding: 
 
 1. Install "ef core power tools" visual studio extension (It needs close and open Visual Studio after downloading)
