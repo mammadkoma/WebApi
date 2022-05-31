@@ -90,4 +90,4 @@ public class PasswordHasher
             | ((uint)(buffer[offset + 2]) << 8)
             | buffer[offset + 3];
     }
-}//
+}
