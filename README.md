@@ -51,6 +51,7 @@ for scaffolding:
 ![image](https://user-images.githubusercontent.com/17564001/170641507-342c2168-bf51-4934-87cf-e7d7da32fd25.png)
 
 <hr>
+
 - Validation : create a ViewModel class file and add validation attribute on top of properties.
 
 ![image](https://user-images.githubusercontent.com/17564001/170645236-f01caaec-ed07-499d-a34a-756bc905fb1e.png)
