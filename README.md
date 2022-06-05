@@ -130,5 +130,7 @@ You shouldn't repeat code for error 401 Unauthorized , 403 Forbidden. They are c
 
 - Secure user passwords : We must prevent to give away the user passwords , so we must change them that other persons can't read them in the data base.
 We can generate one way hash for user1 password. If then user1 password give away , a person who access the data base can set user1's hash for user2 and login to the system with user2 username and gived away password. Then there is a solution for this problem and it is the salt password. The salt password is a random string that it use to generate the hash and causes that generated hashes are not similar to. For example the generated hash for pasword aA@12345 is change every time it generate so the hacker can not set it to user2. Then we must save the salt password in the data base for every user to generate the hash again for comparing in login service. So we should create 2 columns for password in user data base User table : HashPassword and SaltPasword.
+But Here is how the default implementation (ASP.NET Framework or ASP.NET Core) works. It uses a Key Derivation Function with random salt to produce the hash. The salt is included as part of the output of the KDF. Thus, each time you "hash" the same password you will get different hashes. To verify the hash the output is split back to the salt and the rest, and the KDF is run again on the password with the specified salt. If the result matches to the rest of the initial output the hash is verified.
+I write the class PasswordHasher based on .net6 PasswordHasher docs latest version (V3) , so you don't need to create SaltPassword in data base because the SaltPassword is in the Password.
 
-
+<hr>
