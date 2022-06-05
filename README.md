@@ -58,7 +58,7 @@ for scaffolding:
 
 There are regex validations for username , password , Iranian mobile and email in this project.
 
-<hr>
+
 
 Regular Expression for Username:
 
@@ -68,7 +68,7 @@ chars , numbers , . , _ accepted
 
 minimun 3 chars
 
-<hr>
+
 
 Regex for Password:
 
@@ -88,7 +88,7 @@ Regex for Password:
 
 $ : end line
 
-<hr>
+
 
 Regex for Iranian mobiles:
 
@@ -98,13 +98,13 @@ start with 09 and then 1 for hamrahe avval , 3 for irancell , 2 for rightel
 
 lenght is only 11 numbers
 
-<hr>
+
 
 Regex for Email:
 
 [RegularExpression(@"^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-‌​]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$", ErrorMessage = Constants.RegularExpressionMsg)]
 
-<hr>
+
 
 ErrorMessages are in Constants class , so you change error messages only one place:
 
