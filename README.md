@@ -1,14 +1,20 @@
 # asp.net core 6 web api for spa apps , focusing on writing less code
 - Global Using Statements , then you shouldn't write using using ... on top of all classes.
+
 ![image](https://user-images.githubusercontent.com/17564001/170569285-18e5694b-a610-4346-ae36-61920e49c7c4.png)
+
 <hr> 
+
 - File Scoped Namespaces , then we remove namespace block and get more space.
 
 ![image](https://user-images.githubusercontent.com/17564001/170643358-46b23d5a-c0af-4c2f-b8a3-3482b0ea5806.png)
 
 Enable it in visual studio options for your new classes:
+
 ![image](https://user-images.githubusercontent.com/17564001/170640230-90d33c4a-a0bb-4c1a-bfad-616b28143b34.png)
+
 <hr>
+
 - EF core 6 data base first
 
 Open ssms and connect to your sql server instance , right click on Databases , select Attach... , click on Add... button , go to the WebApi project and Data folder , select WebApi.mdf and select OK. Now you have the WebApi data base on your sql server instance.
