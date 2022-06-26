@@ -1,5 +1,6 @@
 ﻿namespace WebApi.Services.UserService;
 
+[RegisterAsScoped]
 public class UserService : IUserService
 {
     private readonly AppDbContext _db;

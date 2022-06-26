@@ -31,11 +31,11 @@ public class UserController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Login(VmLogin model)
     {
-        var user = await _userService.GetByUserName(model.UserName);
+        //var user = await _userService.GetByUserName(model.UserName);
 
-        if (user is null || !PasswordHasher.VerifyHashedPasswordV3(user.PasswordHash, model.Password))
-            throw new Exception("یوزرنیم یا پسورد اشتباه است.");
+        //if (user is null || !PasswordHasher.VerifyHashedPasswordV3(user.PasswordHash, model.Password))
+        //    throw new Exception("یوزرنیم یا پسورد اشتباه است.");
 
-        return Ok();
+        return Ok("Logined");
     }
 }
