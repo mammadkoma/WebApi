@@ -2,7 +2,6 @@
 global using Microsoft.AspNetCore.Diagnostics;
 global using Microsoft.AspNetCore.Mvc;
 global using Microsoft.EntityFrameworkCore;
-global using NetCore.AutoRegisterDi;
 global using System.ComponentModel.DataAnnotations;
 global using System.Globalization;
 global using System.Net;
