@@ -4,8 +4,8 @@
 [ApiController]
 public class UserController : ControllerBase
 {
-    private readonly IUserService _userService;
-    public UserController(IUserService userService)
+    private readonly UserService _userService;
+    public UserController(UserService userService)
     {
         _userService = userService;
     }
