@@ -12,7 +12,7 @@ var appServices = typeof(Program).Assembly.GetTypes()
 foreach (var appService in appServices)
     builder.Services.Add(new ServiceDescriptor(appService, appService, ServiceLifetime.Scoped));
 
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddBadRequestServices();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 #endregion
